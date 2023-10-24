@@ -3,7 +3,7 @@ if Config.Settings.Framework == "QB" then
         if v.Type == "installer" then 
             QBCore.Functions.CreateUseableItem(v.Name, function(source, item)
                 local src = source
-                local Player = QBCore.Functions.GetPlayer(src)
+                local Player = exports.qbx_core:GetPlayer(src)
                 if Player.Functions.GetItemByName(item.name) then
                     TriggerEvent('Wrapper:AntiLag:Log',src,'Used AntiLag System Item')
                     TriggerClientEvent('bbv-antilag:noscam:install',src,item.name)
@@ -16,7 +16,7 @@ if Config.Settings.Framework == "QB" then
         if v.Type == "remover" then 
             QBCore.Functions.CreateUseableItem(v.Name, function(source, item)
                 local src = source
-                local Player = QBCore.Functions.GetPlayer(src)
+                local Player = exports.qbx_core:GetPlayer(src)
                 if Player.Functions.GetItemByName(item.name) then
                     TriggerEvent('Wrapper:AntiLag:Log',src,'Used Antilag Remove Item')
                     TriggerClientEvent('bbv-antilag:noscam:remove',src,item.name)
