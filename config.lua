@@ -1,6 +1,6 @@
 Config = {}
 
--- QBCore = exports['qb-core']:GetCoreObject()  -- uncomment if you use QBCore
+QBCore = exports['qb-core']:GetCoreObject()  -- uncomment if you use QBCore
 -- ESX = exports["es_extended"]:getSharedObject() -- uncomment if you use ESX
 
 Config.Settings = {
