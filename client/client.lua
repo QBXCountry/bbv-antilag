@@ -117,7 +117,8 @@ RegisterNetEvent('bbv-antilag:noscam:install',function(_item)
             processCamera(mainCam)
             Wrapper:RemoveItem(_item,1)
             Wait(1500)
-            exports['bbv-interactbutton']:button('Install Anti-Lag','Anti-Lag installed','bbv-antilag:install:c',6000)
+            --exports['bbv-interactbutton']:button('Install Anti-Lag','Anti-Lag installed','bbv-antilag:install:c',6000)
+	    TriggerEvent('bbv-antilag:install:c')
         else
             Wrapper:Notify(Lang.NoVeh,'error',2500)
         end
