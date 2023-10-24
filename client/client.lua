@@ -119,6 +119,7 @@ RegisterNetEvent('bbv-antilag:noscam:install',function(_item)
             Wait(1500)
             --exports['bbv-interactbutton']:button('Install Anti-Lag','Anti-Lag installed','bbv-antilag:install:c',6000)
 	    TriggerEvent('bbv-antilag:install:c')
+	    Wrapper:Notify('Installato','success',2500)
         else
             Wrapper:Notify(Lang.NoVeh,'error',2500)
         end
