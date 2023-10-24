@@ -4,14 +4,14 @@ Config = {}
 -- ESX = exports["es_extended"]:getSharedObject() -- uncomment if you use ESX
 
 Config.Settings = {
-    Framework = "ST", -- QB/ESX/ST (ST - Standalone) used for the notify
+    Framework = "QB", -- QB/ESX/ST (ST - Standalone) used for the notify
     ParticleUsed = 'veh_xs_vehicle_mods', -- Particle used (if you are using colors from : https://forum.cfx.re/t/paid-nitro-system-changeable-colors-much-more-qb-esx-standalone/5156013)
     RPM = 0.65, -- the RPM when the pop/antilag gets triggered
     InstallDist = 2.5,
     WebHook = "",
     Commands = {
         Enabled = true, -- if set to true all 'Config.Items' will also be created as commands (used when framework is Standalone) can also be used with frameworks like admin commands
-        Permissions = true, -- if set to true only "allowed" user will be ablo to use them
+        Permissions = false, -- if set to true only "allowed" user will be ablo to use them
         Allowed = { -- users allowed to use commands
             'steam:11000013b******', -- Buddy 
             'steam:steamid',
