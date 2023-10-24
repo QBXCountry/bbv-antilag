@@ -149,7 +149,7 @@ Wrapper = {
 
 function Wrapper:Notify(txt,tp,time) -- QBCore notify
     if Config.Settings.Framework == "QB" then 
-    QBCore.Functions.Notify(txt, tp, time)
+    exports.qbx_core:Notify(txt, tp, time)
     end
     if Config.Settings.Framework == "ESX" then 
         ESX.ShowNotification(txt)
@@ -192,7 +192,7 @@ end
 --     }, {}, {}, function() -- Done
 
 --     end, function()
---         QBCore.Functions.Notify("Cancelled..", "error")
+--         exports.qbx_core:Notify("Cancelled..", "error")
 --     end)
 -- end
 
@@ -228,7 +228,7 @@ end
 --     local ped = _ped or PlayerPedId()
 --     local coords = _coords
 --     if coords == nil then 
---         QBCore.Functions.Notify("Wrapper:meet: Нямаш coords бай хуй", "error", 2500)
+--         exports.qbx_core:Notify("Wrapper:meet: Нямаш coords бай хуй", "error", 2500)
 --         return
 --     end
 --     if fancy then 
